@@ -1,0 +1,20 @@
+{
+  "name": "node-bdd-example",
+  "version": "0.0.0",
+  "description": "Example BDD testing nodejs applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {},
+  "author": "Paul Shannon",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-devserver": "~0.4.1",
+    "cucumber": "~0.3.0",
+    "wd": "0.0.32",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-cucumber": "~0.2.1"
+  }
+}
