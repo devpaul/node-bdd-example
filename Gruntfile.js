@@ -1,5 +1,3 @@
-var path = require('path')
-
 module.exports = function(grunt) {
     initialize()
     loadTasks()
@@ -19,6 +17,6 @@ module.exports = function(grunt) {
 
     function describeGoals() {
         grunt.registerTask('default', ['jshint', 'test'])
-        grunt.registerTask('test', ['devserver', 'cucumberjs'])
+        grunt.registerTask('test', ['cucumberjs'])
     }
 }

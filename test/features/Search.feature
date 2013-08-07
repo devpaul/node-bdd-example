@@ -3,5 +3,9 @@ Feature:
   on the website and validate that a list of results
   have been returned
 
-Scenario: Visit the homepage
-  
+Background:
+  Given I am on the homepage
+
+Scenario: Perform a search
+  When I perform a search
+  Then I see the search results page

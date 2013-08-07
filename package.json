@@ -9,12 +9,13 @@
   "repository": {},
   "author": "Paul Shannon",
   "license": "BSD",
-  "devDependencies": {
+  "dependencies": {
     "grunt": "~0.4.1",
     "grunt-devserver": "~0.4.1",
-    "cucumber": "~0.3.0",
+    "cucumber": "git+https://github.com/devpaul/cucumber-js.git",
     "wd": "0.0.32",
     "grunt-contrib-jshint": "~0.6.0",
-    "grunt-cucumber": "~0.2.1"
+    "grunt-cucumber": "~0.2.1",
+    "cucumber-wd-plugin": "0.0.1"
   }
 }
