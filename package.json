@@ -1,6 +1,6 @@
 {
   "name": "node-bdd-example",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Example BDD testing nodejs applications",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,6 @@
     "grunt-contrib-jshint": "~0.6.0",
     "grunt-cucumber": "~0.2.1",
     "cucumber-wd-plugin": "0.0.1",
-    "q": "~0.9.6",
+    "q": "~0.9.6"
   }
 }
