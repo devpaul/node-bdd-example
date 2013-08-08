@@ -18,5 +18,6 @@ module.exports = function(grunt) {
     function describeGoals() {
         grunt.registerTask('default', ['jshint', 'test'])
         grunt.registerTask('test', ['cucumberjs'])
+        grunt.registerTask('lint', ['jshint'])
     }
 }
