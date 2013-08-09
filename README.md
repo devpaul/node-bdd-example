@@ -27,7 +27,7 @@ Then you can just run
 ```
 
 ## Overview
-If you ran the example then you should see an automated Google search.  This scenerio is defined in the
+If you ran the example then you should see an automated Google search.  This scenario is defined in the
 file `Search.feature` using language that you might typically see a user use to explain what they are doing.
 
 Cucumber takes that and uses implemented steps under `step_definitions` to map the natural language feature description
@@ -35,7 +35,7 @@ to some code.  It lets people and computers each speak their own language and ma
 didn't count for foreign language credit.
 
 There is some magic involved with the `World` stuff, which [cucumber-js] explains better than I would. But it is
-there to store your context while your scenerio is executing.
+there to store your context while your scenario is executing.
 
 And `interfaces` has all of your page, well, interfaces.  Our UI interfaces are separated from our step implementations
 to reduce the brittleness of tests.  A lot of people have made a lot of money writing a lot of books about this stuff.
