@@ -1,11 +1,8 @@
-var World = require('../support/World')
-  , ResultsPage = require('../interfaces/ResultsPage.js')
+var ResultsPage = require('../interfaces/ResultsPage.js')
 
 function searchDefinitions() {
-    this.World = World
-
     this.When(/^I perform a search$/, function(callback) {
-        var performPromise = this.context.page.search('google')
+        var performPromise = this.page.search('google')
 
         performPromise.then(function() { callback() }).fail(callback)
     });
