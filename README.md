@@ -8,8 +8,9 @@ driven with [wd], the nodejs [selenium] web driver, so [Chrome] terminates clean
 It sounds complicated, but after the initial setup things are pretty straight-forward.
 
 ## Try it out
-If you don't already have it installed you'll need [nodejs] and [grunt-cli] and a [selenium] server (I use [saucelabs]
-for this). Feel free to [contact me][Twitter] if you'd like or [send me a pull request][repo].
+If you don't already have it installed you'll need [nodejs] and [grunt-cli] and a [selenium] server.  I use [saucelabs]
+as my Selenium server, but you can also use this [vagrant selenium grid](https://github.com/cdegroot/vagrant-selenium-grid)
+if you would like to run it locally. Feel free to [contact me][Twitter] if you'd like or [send me a pull request][repo].
 
 You'll need to set the environment variables `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY`. Here's the too-cool-for-school
 way:
@@ -40,10 +41,11 @@ there to store your context while your scenario is executing.
 And `interfaces` has all of your page, well, interfaces.  Our UI interfaces are separated from our step implementations
 to reduce the brittleness of tests.  A lot of people have made a lot of money writing a lot of books about this stuff.
 
-## A Tiny Catch
-If you took a look at `package.json` you might notice I am using a forked [cucumber-js].  To get everything to work
-with [grunt] I needed a way to hook into the runtime's event dispatcher.  Don't worry, there's a [pull request][pull] out
-there.
+## Update!
+[cucumber-js 0.3.2][cucumber0.3.2] provides preliminary \[unstable api\] support for plugins through the use of
+```registerListener``` in step definitions. Since the inclusion of this [pull request][pull], this example no longer
+needs to use the forked version of cucumber and [cucumber-wd-plugin] and [cucumber-eavesdropper] can be used directly
+with [cucumber-js].
 
 [wd]: https://github.com/admc/wd
 [cucumber-js]: https://github.com/cucumber/cucumber-js
@@ -59,3 +61,6 @@ there.
 [Twitter]: https://twitter.com/developerPaul
 [repo]: https://github.com/devpaul/node-bdd-example
 [pull]: https://github.com/cucumber/cucumber-js/pull/130
+[cucumber0.3.2]: https://github.com/cucumber/cucumber-js/releases/tag/v0.3.2
+[cucumber-wd-plugin]: https://github.com/devpaul/cucumber-wd-plugin
+[cucumber-eavesdropper]: https://github.com/devpaul/cucumber-eavesdropper-plugin
