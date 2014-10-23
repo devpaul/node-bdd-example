@@ -5,6 +5,8 @@ exports.remote = { host: process.env.WDHOSTNAME || 'ondemand.saucelabs.com'
                  }
 
 exports.desired = { browserName: 'Chrome'
+                  , version: '30'
+                  , platform: 'Windows 7'
                   , tags: ['examples']
                   , name: 'This is an example node-bdd test'
                   }
